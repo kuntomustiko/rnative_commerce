@@ -28,7 +28,7 @@ const MainRouter = () => {
           // untuk mengetahui secara pasti kode icon yang dapat digunakan dapat melihat ke salah satu file json yang ada di alamat
           // alamat ./node_modules/react-native-vector-icons/gylphhmaps
           tabBarIcon: () => {
-            return <Icon name="home-variant" size={30} />;
+            return <Icon name="home-variant" size={27} />;
           },
         }}
       />
@@ -37,7 +37,7 @@ const MainRouter = () => {
         component={Add}
         options={{
           tabBarIcon: () => {
-            return <Icon name="tooltip-plus" size={30} />;
+            return <Icon name="tooltip-plus" size={27} />;
           },
         }}
       />
@@ -46,7 +46,7 @@ const MainRouter = () => {
         component={Account}
         options={{
           tabBarIcon: () => {
-            return <Icon name="account-box" size={30} />;
+            return <Icon name="account-box" size={27} />;
           },
         }}
       />
