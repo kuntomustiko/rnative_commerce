@@ -1,5 +1,7 @@
-import 'react-native-gesture-handler';
+// file app sebagai indux dari keseluruhan applikasi
 
+// setiap kita menggunakan react navigation, maka kita harus mengimport ini di parent paling atas
+import 'react-native-gesture-handler';
 import React from 'react';
 import {View, Text} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
@@ -7,17 +9,16 @@ import {NavigationContainer} from '@react-navigation/native';
 // Redux
 import {Provider} from 'react-redux';
 import store from './redux';
-// ROuter
-import MainRouter from './router/MainRouter';
-import AuthRouter from './router/AuthRouter';
+
+// Router
+import InitRouter from './router/InitRouter';
 
 const App = () => {
   return (
     <Provider store={store}>
-      // Semua navigasi harus di wrap oleh NavigationContainer
+      {/* // Semua navigasi harus di wrap oleh NavigationContainer */}
       <NavigationContainer>
-        {/* <MainRouter /> */}
-        <AuthRouter />
+        <InitRouter />
       </NavigationContainer>
     </Provider>
   );

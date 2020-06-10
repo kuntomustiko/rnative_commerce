@@ -1,0 +1,5 @@
+Untuk bisa terkoneksi ke localhost milik laptop, maka running perintah dibawah ini di terminal
+   $ adb reverse tcp:[port] tcp:[port]
+
+-----------------------------
+adb reverse tcp:2020 tcp:2020
